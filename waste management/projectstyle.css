@@ -1,0 +1,61 @@
+
+
+.card img {
+    border: 1px solid black;
+}
+
+.card-text {
+    text-align: center;
+}
+
+#how_we_work {
+    font-size: 20px;
+}
+
+label.logo {
+    color: white;
+    font-size: 50px;
+    padding-left: 40px;
+}
+
+#how_we_work img{
+    border: 2px solid black;
+}
+
+.footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 170px;
+    padding-top: 20px;
+}
+
+#buttonmain{
+    border-radius: 200px;
+    background: black;
+    color: white;
+    border: 2px solid white;
+    overflow: hidden;
+    text-decoration: none;
+    outline: none;
+}
+
+#buttonmain:hover{
+    background: white;
+    color:black;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+    border: 2px solid black;
+}
+.col-md-5 h1{
+    margin-top: 50px;
+    font-size: 70px!important;
+    padding-left: 20px;
+}
+.col-12 ul li{
+    font-size: 20px;
+}
+.col-12 h1{
+    font-size: 60px;
+}

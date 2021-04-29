@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zero Trash</title>
+    <link rel="stylesheet" href="projectstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="LogoMakr_89WuQa.png" height="60"width="80">
+    <label class="logo">Zero Trash</label>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<form action="action_page.php" style="border:1px solid #ccc;background-color:lightgrey;" >
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5">
+        <h1>Now you are one step closer towards a better tommorow.</h1>
+      </div>
+      <div class="col-md-7">
+        <h1><b>Sign Up</b></h1>
+    <h3>Please fill in this form to create an account</h3>
+    <hr align="left"style="border: 2px solid black; width:50%">
+     <div>
+    <label for="name" ><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required><br>
+
+    <label for="email" ><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required><br>
+    
+    <label for="psw" ><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required ><br>
+   
+
+    <label for="psw-repeat" ><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>  
+    
+
+
+    <label for="loc" ><b>Location</b></label>
+    <input type="location" placeholder= "Enter Location" name="loc" id="location" required><br>
+    
+
+    <label for="toi" ><b>Type Of Institution</b></label><br>
+  
+    
+    <input type="radio" name="organisation" value="HOSPITAL"> HOSPITAL<br>
+    <input type="radio" name="organisation" value="HOUSEHOLD"> HOUSEHOLD<br>
+    <input type="radio" name="organisation" value="INDUSTRY"> INDUSTRY<br>
+    <input type="radio" name="organisation" value="OTHERS"> OTHERS<br>
+    <br>
+      <div >
+    <label for="phn" ><b>Phone Number</b></label>
+    <input type="number" placeholder="Enter Phone Number" name="phn" required><br>
+    <label>
+      <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
+    </label><br>
+    <input type="checkbox" name="remember" style="margin-bottom:15px"> By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+    <div class="clearfix">
+      <button type="submit" class="signupbtn" style="text-align: center; text-decoration: none;"><b><a href="loggedin.html" style="color: black">Sign Up</a></b></button>
+      <button type="button" class="cancelbtn" style="margin-bottom: 20px;"><b>Cancel</b></button>
+    </div>
+    </div>
+    </form>
+      </div>
+    </div>
+</body>
+</html>

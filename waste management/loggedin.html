@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width", initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projectstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="icon.jpg" height="60"width="80" style="padding-left: 20px;">
+        <label class="logo"><h1 style="color:white;">Zero Trash</h1></label>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html" title="Goto Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html" title="More about us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project.html#" title="Goto Login">Login</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container" style="margin-top:20px">
+        <h1>Choose the plan that's right for you.</h1>
+        <p>Downgrade or upgrade at any time.</p>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Monthly</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Rs.250/month</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Quarterly</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Rs.700/quarter</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Half Yearly</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Rs.1300/halfyear</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Yearly</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Rs.2400/year</h6>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 20px;">
+            <h3>Pick your plan :</h3>
+            <select class="custom-select" id="plan" style="width: 50%;">
+                <option selected>Pick your choice</option>
+                <option value="monthly">Monthly</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="halfyearly">Half Yearly</option>
+                <option value="yearly">Yearly</option>
+              </select>
+            
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <h3>Select the Number of bags required :</h3>
+            <h6></h6>
+            <select class="custom-select" id="haz">
+                <option selected>For Hazardous waste : </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="More">More</option>
+            </select>
+            <select class="custom-select" id="bio">
+                <option selected>For Biodegrable waste : </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="More">More</option>
+            </select>
+            
+            <select class="custom-select" id="nob">
+                <option selected>For Non-Biodegrable:</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="More">More</option>
+            </select>
+        </div>
+    </div>
+    <div class="container" style="text-align: center;margin-top: 20px;">
+        <input id="buttonmain" type="button" value="Subscribe Now" onclick="display()"><br><br>
+    </div>
+
+    <script>
+        function display()
+        {
+            window.alert("You have successfully signed up, please login to continue");
+        }
+                
+    </script>
+    <script src="project.js"></script>
+</body>
+</html>
